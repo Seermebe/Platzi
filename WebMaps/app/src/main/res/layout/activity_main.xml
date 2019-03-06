@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/material_blue_grey_900"
+        tools:ignore="PrivateResource">
+
+        <LinearLayout
+            android:id="@+id/ll_an_contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/material_blue_grey_900"
+                tools:ignore="PrivateResource">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@color/gris_100">
+
+                    <LinearLayout
+                        android:id="@+id/ll_an_cabeza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_rounded_item"
+                        android:layout_margin="8dp"
+                        android:elevation="4dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_an_numero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Número"
+                            android:textColor="@color/verde_oscuro"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aos_cl_direccion_t"
+                            android:layout_weight="1"
+                            android:textColor="@color/verde_oscuro"
+                            tools:ignore="PrivateResource" />
+
+                        <TextView
+                            android:id="@+id/an_cl_direccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/aos_cl_direccion"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Destino"
+                            android:layout_weight="1"
+                            android:textColor="@color/verde_oscuro"
+                            tools:ignore="PrivateResource" />
+
+                        <TextView
+                            android:id="@+id/an_cl_nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Destino"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Observaciones"
+                            android:textColor="@color/verde_oscuro"
+                            tools:ignore="PrivateResource" />
+
+                        <TextView
+                            android:id="@+id/tv_an_observaciones"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Observaciones" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_an_mapa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        tools:ignore="PrivateResource">
+
+                        <TextView
+                            android:id="@+id/tv_an_detalle_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gris"
+                            android:padding="4dp"
+                            android:text="Ruta"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                        <fragment
+                            android:id="@+id/fr_an_mapa"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    tools:ignore="RtlHardcoded" >
+
+                    <Button
+                        android:id="@+id/bt_an_opcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:backgroundTint="@color/verde"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_an_opcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@color/verde"
+                        android:visibility="gone"
+                        tools:ignore="RtlHardcoded" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/shape_squared"
+                            tools:ignore="RtlHardcoded" >
+
+                            <!--<com.waysolutions.waylogistic.Interface.SlideButton.SlideButton-->
+                                <!--android:id="@+id/sb_an_opcion"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_margin="4dp"-->
+                                <!--app:button_trail_enabled="true"-->
+                                <!--app:button_image_disabled="@drawable/ic_arrow_icon_hover"-->
+                                <!--app:button_image_enabled="@drawable/ic_arrow_icon_hover"-->
+                                <!--app:button_background="@drawable/shape_button_squared"-->
+                                <!--app:initial_state="disabled"-->
+                                <!--app:inner_text_background="@drawable/shape_squared"-->
+                                <!--app:inner_text_color="@color/verde"-->
+                                <!--app:inner_text_size="16sp"-->
+                                <!--app:has_activate_state="true"-->
+                                <!--app:inner_text_top_padding="13dp"-->
+                                <!--app:inner_text_bottom_padding="13dp"-->
+                                <!--app:inner_text="              Deslice para confirmar"/>-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_an_cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        app:srcCompat="@drawable/ic_close"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginBottom="80dp"
+        app:fabSize="mini"
+        app:tint="@color/white"
+        app:backgroundTint="@color/rojo"
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_rto_detener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        app:srcCompat="@drawable/square"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginBottom="80dp"
+        app:backgroundTint="@color/rojo"
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_an_navegar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@drawable/navigation"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginBottom="80dp"
+        app:tint="@color/white"
+        app:backgroundTint="@color/verde"
+        tools:ignore="RtlHardcoded" />
+</android.support.design.widget.CoordinatorLayout>

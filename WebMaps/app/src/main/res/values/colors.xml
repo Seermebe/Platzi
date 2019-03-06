@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- colores del sistema  -->
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#FFF</color>
+
+    <!-- colores de diseño  -->
+
+    <color name="verde">#4CAF50</color>
+    <color name="verde_oscuro">#006160</color>
+    <color name="verde_medio">#D4EB8E</color>
+    <color name="naranja">#FF0000</color>
+    <color name="amarillo_oscuro">#F7931E</color>
+    <color name="amarillo_claro">#FBB03B</color>
+    <color name="gris">#808080</color>
+
+    <!-- colores otros  -->
+
+    <color name="white">#ffffffff</color>
+    <color name="tools_box_bg">#ff333332</color>
+    <color name="text_white_shadow_color">#ff5a9487</color>
+
+    <color name="rojo">#db3e4d</color>
+    <color name="blanco_alpha">#00FFFFFF</color>
+    <color name="negro_alpha">#00000000</color>
+    <color name="negro_item">#00000000</color>
+    <color name="beige">#BAB399</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="azul">#0000FF</color>
+    <color name="saddle_brown">#8b4513</color>
+    <color name="amber">#FFC107</color>
+    <color name="negro">#000000</color>
+    <color name="negro_semitransparente">#B2000000</color>
+    <color name="gris_100">#F5F5F5</color>
+    <color name="gris_300">#E0E0E0</color>
+    <color name="gris_500">#9E9E9E</color>
+    <color name="gris_700">#616161</color>
+    <color name="gris_900">#212121</color>
+
+</resources>

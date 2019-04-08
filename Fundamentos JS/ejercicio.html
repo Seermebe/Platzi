@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <script>
+        let dim = prompt('Digite tamaño')
+
+        var matriz = new Array(dim)
+
+        function ini() {
+            for (let i = 0; i < dim; i++) {
+                matriz[i] = new Array(dim).fill(0)
+            }
+
+            for (let i = 0; i < dim; i++) {
+                for (let j = 0; j < dim; j++) {
+                    this.matriz[i][j] = 0
+                }
+            }
+        }
+
+        function llenarT(i, j, nivel) {
+            while (j + nivel < dim - nivel) {
+                this.matriz[i + nivel][j + nivel] = prompt(`Ingrese valor para la pos ${i},${j}`)
+                j++
+            }
+        }
+
+        function llenarR(i, j, nivel) {
+            for (let i = 0, j = dim - 1; i < dim; i++) {
+                this.matriz[i][j] = prompt(`Ingrese valor para la pos ${i},${j}`)
+            }
+        }
+
+        function llenarB(i, j, nivel) {
+            for (let i = dim - 1, j = dim - 1; j >= 0; j--) {
+                this.matriz[i][j] = prompt(`Ingrese valor para la pos ${i},${j}`)
+            }
+        }
+
+        function llenarL(i, j, nivel) {
+            for (let i = dim - 1, j = 0; i >= 0; i--) {
+                this.matriz[i][j] = prompt(`Ingrese valor para la pos ${i},${j}`)
+            }
+        }
+
+        function llenar() {
+            llenarT(0, 0, 1)
+            // llenarR()
+            // llenarB()
+            // llenarL()
+        }
+
+        function imp() {
+            for (let i = 0; i < dim; i++) {
+                let js = ''
+                for (let j = 0; j < dim; j++) {
+                    js += ' ' + this.matriz[i][j]
+                }
+                console.log(`${js}`)
+            }
+        }
+
+        ini()
+        llenar()
+        imp()
+    </script>
+</body>
+
+</html>
